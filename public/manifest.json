@@ -1,0 +1,22 @@
+{
+  "name": "العودري للعسل - عسل يمني أصيل",
+  "short_name": "العودري للعسل",
+  "description": "متجر العسل الطبيعي اليمني الأصيل - نكهة الأصالة وجودة الطبيعة",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#D97706",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "shopping"],
+  "lang": "ar",
+  "dir": "rtl"
+}
+

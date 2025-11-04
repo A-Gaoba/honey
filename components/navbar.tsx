@@ -39,13 +39,12 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
-        scrolled ? "shadow-xl" : "shadow-lg"
-      }`}
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${scrolled ? "shadow-xl" : "shadow-lg"
+        }`}
     >
-      <div className="bg-white/95 backdrop-blur-sm rounded-full px-6 py-3 flex items-center justify-between gap-8 max-w-5xl mx-auto border border-gray-100">
+      <div className="bg-white/95 backdrop-blur-sm rounded-full px-10 py-4 flex items-center justify-between gap-12 lg-w-[1400px] mx-auto border border-gray-100">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 flex-shrink-0" aria-label="العودري للعسل">
+        <Link href="/" className="flex items-center gap-2 " aria-label="العودري">
           <div className="relative w-10 h-10">
             {/* Honey-themed logo with overlapping shapes */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -59,17 +58,17 @@ export function Navbar() {
               </div>
             </div>
           </div>
-          <span className="font-display font-bold text-lg text-foreground hidden sm:block">العودري للعسل</span>
+          <span className="font-display font-bold text-xl text-foreground hidden sm:block">العودري </span>
         </Link>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-10 flex-1 justify-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={(e) => scrollToSection(e, link.href)}
-              className="text-foreground/80 hover:text-foreground font-body font-medium text-sm transition-colors duration-200 relative group"
+              className="text-foreground/80 hover:text-foreground font-body font-medium text-base transition-colors duration-200 relative group whitespace-nowrap"
             >
               {link.label}
               <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -77,13 +76,6 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* Language Switcher Button */}
-        <button
-          className="w-10 h-10 rounded-full bg-white border-2 border-gray-200 hover:border-primary transition-all duration-200 flex items-center justify-center shadow-sm hover:shadow-md flex-shrink-0"
-          aria-label="تبديل اللغة"
-        >
-          <span className="text-foreground font-display font-bold text-lg">ع</span>
-        </button>
 
         {/* Mobile Menu Button */}
         <button

@@ -102,6 +102,11 @@ export const metadata: Metadata = {
     // bing: "your-bing-verification-code",
   },
   category: "food",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 }
 
 // Structured Data for LocalBusiness
@@ -178,8 +183,9 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#D97706" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
