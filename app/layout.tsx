@@ -22,7 +22,7 @@ const ibmPlexSansArabic = IBM_Plex_Sans_Arabic({
   fallback: ["system-ui", "Tajawal", "Cairo", "sans-serif"],
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://alaudri-honey.com"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://alawdari.vercel.app"
 
 export const metadata: Metadata = {
   title: {
