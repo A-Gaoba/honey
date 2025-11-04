@@ -41,7 +41,7 @@ export function Products() {
               <CardFooter>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                   <a
-                    href="https://wa.me/967777777777"
+                    href="https://wa.me/967771356441"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"

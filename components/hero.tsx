@@ -48,7 +48,7 @@ export function Hero() {
               asChild
             >
               <a
-                href="https://wa.me/967777777777"
+                href="https://wa.me/967771356441"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

@@ -23,15 +23,15 @@ export function Footer() {
             <h4 className="text-xl font-bold mb-4">تواصل معنا</h4>
             <div className="space-y-3">
               <a
-                href="tel:+967777777777"
+                href="tel:+967771356441"
                 className="flex items-center justify-center md:justify-end gap-2 hover:opacity-80 transition-opacity"
                 aria-label="رقم الهاتف"
               >
                 <Phone className="w-5 h-5" />
-                <span>967777777777+</span>
+                <span>+967 771 356 441</span>
               </a>
               <a
-                href="https://wa.me/967777777777"
+                href="https://wa.me/967771356441"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center md:justify-end gap-2 hover:opacity-80 transition-opacity"
@@ -60,7 +60,7 @@ export function Footer() {
             <h4 className="text-xl font-bold mb-4">تابعنا</h4>
             <div className="flex items-center justify-center md:justify-end gap-6">
               <a
-                href="https://wa.me/967777777777"
+                href="https://wa.me/967771356441"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:scale-110 transition-transform duration-300"

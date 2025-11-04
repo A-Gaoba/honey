@@ -19,7 +19,7 @@ export function Contact() {
     e.preventDefault()
     // Send via WhatsApp
     const whatsappMessage = `الاسم: ${formData.name}%0Aرقم الهاتف: ${formData.phone}%0Aالرسالة: ${formData.message}`
-    window.open(`https://wa.me/967777777777?text=${whatsappMessage}`, "_blank")
+    window.open(`https://wa.me/967771356441?text=${whatsappMessage}`, "_blank")
   }
 
   return (
@@ -80,13 +80,13 @@ export function Contact() {
                 asChild
               >
                 <a
-                  href="https://wa.me/967777777777"
+                  href="https://wa.me/967771356441"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3"
                 >
                   <MessageCircle className="w-6 h-6" />
-                  <span>واتساب: 967777777777+</span>
+                  <span>واتساب: +967 771 356 441</span>
                 </a>
               </Button>
 
@@ -113,9 +113,9 @@ export function Contact() {
                 className="w-full text-lg py-6 justify-start border-2 hover:bg-accent bg-transparent"
                 asChild
               >
-                <a href="tel:+967777777777" className="flex items-center gap-3">
+                <a href="tel:+967771356441" className="flex items-center gap-3">
                   <Phone className="w-6 h-6" />
-                  <span>هاتف: 967777777777+</span>
+                  <span>هاتف: +967 771 356 441</span>
                 </a>
               </Button>
 

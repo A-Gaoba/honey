@@ -121,7 +121,7 @@ const localBusinessSchema = {
   image: `${siteUrl}/premium-honey-packaging-luxury-jars.jpg`,
   logo: `${siteUrl}/placeholder-logo.png`,
   url: siteUrl,
-  telephone: "+967777777777",
+  telephone: "+967771356441",
   address: {
     "@type": "PostalAddress",
     addressCountry: "YE",
@@ -142,7 +142,7 @@ const localBusinessSchema = {
     closes: "21:00",
   },
   sameAs: [
-    "https://wa.me/967777777777",
+    "https://wa.me/967771356441",
     "https://instagram.com/alaudri_honey",
   ],
   aggregateRating: {
@@ -163,12 +163,12 @@ const organizationSchema = {
   url: siteUrl,
   logo: `${siteUrl}/placeholder-logo.png`,
   sameAs: [
-    "https://wa.me/967777777777",
+    "https://wa.me/967771356441",
     "https://instagram.com/alaudri_honey",
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+967777777777",
+    telephone: "+967771356441",
     contactType: "customer service",
     availableLanguage: ["Arabic", "English"],
     areaServed: "YE",
