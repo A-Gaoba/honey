@@ -32,37 +32,39 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-[10] container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
-          <h1 className="display-text text-white leading-tight text-balance">
-            العودري للعسل
-          </h1>
-          <p className="subtitle text-accent font-medium text-balance">نكهة الأصالة وجودة الطبيعة</p>
-          <p className="lead text-white/90 max-w-2xl mx-auto text-pretty">
-            من قلب الجبال اليمنية، نقدم لكم أجود أنواع العسل الطبيعي
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              asChild
-            >
-              <a
-                href="https://wa.me/967771356441"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
+      <div className="relative z-[10] w-full flex items-center justify-center min-h-[calc(100vh-5rem)]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8 animate-fade-in-up">
+            <h1 className="display-text text-white leading-tight text-balance text-center mx-auto">
+              العودري للعسل
+            </h1>
+            <p className="subtitle text-accent font-medium text-balance text-center mx-auto">نكهة الأصالة وجودة الطبيعة</p>
+            <p className="lead text-white/90 max-w-2xl mx-auto text-pretty text-center">
+              من قلب الجبال اليمنية، نقدم لكم أجود أنواع العسل الطبيعي
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                asChild
               >
-                <MessageCircle className="w-5 h-5" />
-                اطلب الآن عبر واتساب
-              </a>
-            </Button>
+                <a
+                  href="https://wa.me/967771356441"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  اطلب الآن عبر واتساب
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
 
       <a
-        href="https://wa.me/967777777777"
+        href="https://wa.me/967771356441"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 left-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 animate-bounce-slow"

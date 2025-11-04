@@ -39,10 +39,10 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${scrolled ? "shadow-xl" : "shadow-lg"
+      className={`fixed top-4 left-1/2 w-[90%] md:w-[70%] -translate-x-1/2 z-50 transition-all duration-300 bg-white/20 ${scrolled ? "shadow-xl rounded-full" : "shadow-lg rounded-full"
         }`}
     >
-      <div className="bg-white/95 backdrop-blur-sm rounded-full px-10 py-4 flex items-center justify-between gap-12 lg-w-[1400px] mx-auto border border-gray-100">
+      <div className="backdrop-blur-sm rounded-full px-6 sm:px-8  py-4 flex items-center justify-between gap-6  lg:gap-12 mx-auto border border-gray-100">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 " aria-label="العودري">
           <div className="relative w-10 h-10">
@@ -79,7 +79,7 @@ export function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors flex-shrink-0"
+          className="md:hidden w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors shrink-0"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="القائمة"
         >
