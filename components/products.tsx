@@ -5,6 +5,25 @@ import Image from "next/image"
 import { products } from "@/lib/products-data"
 
 export function Products() {
+  // Function to generate WhatsApp URL with product details
+  const getWhatsAppUrl = (product: (typeof products)[0]) => {
+    const message = `السلام عليكم ورحمة الله وبركاته
+
+أرغب في طلب المنتج التالي:
+
+📦 المنتج: ${product.name}
+📝 الوصف: ${product.description}
+
+الرجاء تزويدي بالتفاصيل والأسعار.
+
+شكراً لكم
+العودري للعسل 🍯`
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message)
+    return `https://wa.me/967771356441?text=${encodedMessage}`
+  }
+
   return (
     <section id="products" className="py-20 md:py-32 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -41,7 +60,7 @@ export function Products() {
               <CardFooter>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
                   <a
-                    href="https://wa.me/967771356441"
+                    href={getWhatsAppUrl(product)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"

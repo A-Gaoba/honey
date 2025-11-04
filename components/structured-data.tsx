@@ -20,7 +20,11 @@ export function ProductSchema() {
       availability: "https://schema.org/InStock",
       priceCurrency: "YER",
       url: `${siteUrl}#products`,
+      price: "0",
+      priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split("T")[0],
     },
+    category: "عسل طبيعي",
+    sku: `HONEY-${product.id}`,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",
@@ -54,6 +58,30 @@ export function BreadcrumbSchema() {
         position: 1,
         name: "الرئيسية",
         item: siteUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "من نحن",
+        item: `${siteUrl}#about`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "منتجاتنا",
+        item: `${siteUrl}#products`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "آراء العملاء",
+        item: `${siteUrl}#testimonials`,
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "تواصل معنا",
+        item: `${siteUrl}#contact`,
       },
     ],
   }

@@ -13,6 +13,8 @@ export function Hero() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          aria-label="خلفية فيديو - العودري للعسل"
+          poster="/premium-honey-packaging-luxury-jars.jpg"
         >
           <source src="/bg.mp4" type="video/mp4" />
         </video>

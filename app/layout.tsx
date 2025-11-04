@@ -64,6 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ar_SA",
+    alternateLocale: ["ar_YE", "en_US"],
     url: siteUrl,
     siteName: "العودري للعسل",
     title: "العودري للعسل - عسل يمني أصيل طبيعي 100%",
@@ -75,6 +76,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "العودري للعسل - عسل يمني أصيل",
+        type: "image/jpeg",
       },
     ],
   },
@@ -83,6 +85,8 @@ export const metadata: Metadata = {
     title: "العودري للعسل - عسل يمني أصيل طبيعي 100%",
     description: "نكهة الأصالة وجودة الطبيعة. أجود أنواع العسل اليمني الأصيل",
     images: [`${siteUrl}/premium-honey-packaging-luxury-jars.jpg`],
+    creator: "@alaudri_honey",
+    site: "@alaudri_honey",
   },
   robots: {
     index: true,
@@ -187,8 +191,22 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link rel="canonical" href={siteUrl} />
         <meta name="theme-color" content="#D97706" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="format-detection" content="telephone=yes" />
+        <meta name="geo.region" content="YE" />
+        <meta name="geo.placename" content="صنعاء" />
+        <meta name="geo.position" content="15.3694;44.1910" />
+        <meta name="ICBM" content="15.3694, 44.1910" />
+        <meta name="language" content="Arabic" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

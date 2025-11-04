@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Business Info */}
-          <div className="text-center md:text-right">
+          <div className="text-center md:text-right" dir="rtl">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">العودري للعسل</h3>
             <p className="text-lg md:text-xl opacity-90 mb-4">طعم الطبيعة في كل قطرة 🍯</p>
             <p className="text-sm opacity-75">
@@ -19,46 +19,48 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="text-center md:text-right space-y-4">
-            <h4 className="text-xl font-bold mb-4">تواصل معنا</h4>
-            <div className="space-y-3">
-              <a
-                href="tel:+967771356441"
-                className="flex items-center justify-center md:justify-end gap-2 hover:opacity-80 transition-opacity"
-                aria-label="رقم الهاتف"
-              >
-                <Phone className="w-5 h-5" />
-                <span>+967 771 356 441</span>
-              </a>
-              <a
-                href="https://wa.me/967771356441"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center md:justify-end gap-2 hover:opacity-80 transition-opacity"
-                aria-label="واتساب"
-              >
-                <MessageCircle className="w-5 h-5" />
-                <span>واتساب</span>
-              </a>
-              <div className="flex items-center justify-center md:justify-end gap-2">
-                <MapPin className="w-5 h-5" />
-                <span>صنعاء، اليمن</span>
+          <div className=" text-end md:text-right space-y-4" dir="rtl">
+            <div className="flex flex-col items-start gap-4">
+              <h4 className="text-xl font-bold mb-4">تواصل معنا</h4>
+              <div className="space-y-3">
+                <a
+                  href="tel:+967771356441"
+                  className="flex items-center justify-center gap-2 hover:opacity-80 transition-opacity"
+                  aria-label="رقم الهاتف"
+                >
+                  <Phone className="w-5 h-5 flex-shrink-0" />
+                  <span dir="ltr" className="inline-block">+967 771 356 441</span>
+                </a>
+                <a
+                  href="https://wa.me/967771356441"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-2 hover:opacity-80 transition-opacity"
+                  aria-label="واتساب"
+                >
+                  <MessageCircle className="w-5 h-5 flex-shrink-0" />
+                  <span>واتساب</span>
+                </a>
+                <div className="flex gap-2">
+                  <MapPin className="w-5 h-5 flex-shrink-0" />
+                  <span>صنعاء، اليمن</span>
+                </div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=15.3694,44.1910"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm opacity-75 hover:opacity-100 transition-opacity underline block text-center md:text-right"
+                >
+                  عرض على خرائط جوجل
+                </a>
               </div>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=15.3694,44.1910"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm opacity-75 hover:opacity-100 transition-opacity underline"
-              >
-                عرض على خرائط جوجل
-              </a>
             </div>
           </div>
 
           {/* Social Links */}
-          <div className="text-center md:text-right">
+          <div className="text-center md:text-right" dir="rtl">
             <h4 className="text-xl font-bold mb-4">تابعنا</h4>
-            <div className="flex items-center justify-center md:justify-end gap-6">
+            <div className="flex gap-4">
               <a
                 href="https://wa.me/967771356441"
                 target="_blank"
@@ -86,7 +88,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-6 border-t border-primary-foreground/20 text-center">
+        <div className="pt-6 border-t border-primary-foreground/20 text-center" dir="rtl">
           <p className="text-sm opacity-75">
             جميع الحقوق محفوظة © {currentYear} العودري للعسل - عسل يمني أصيل طبيعي 100%
           </p>
