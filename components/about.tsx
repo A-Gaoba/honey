@@ -55,7 +55,7 @@ export function About() {
             </figure>
             <figure className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
               <Image
-                src="/honey-packaging.png"
+                src="/honey-packaging.jpg"
                 alt="تغليف العسل الفاخر - منتجات العودري للعسل"
                 width={600}
                 height={500}
